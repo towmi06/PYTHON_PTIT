@@ -1,0 +1,10 @@
+a, b, k = map(int, input().split())
+# a: nhay ben phai a dvi , b : trai b dvi, k: so lan nhay 
+left, right =0,0
+if k%2 ==0:
+   left = k//2
+   right =k // 2
+else:
+    left = k // 2
+    right = left +1
+print(right*a - left*b)
